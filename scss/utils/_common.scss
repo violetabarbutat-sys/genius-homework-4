@@ -1,0 +1,88 @@
+﻿/* Utility and common styles */
+
+.page-container,
+.header__container,
+.about__container,
+.services__container {
+  position: relative;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header__burger {
+  display: flex;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.header__burger span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  border-radius: 2px;
+  background: #011c44;
+}
+
+.mobile-menu {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  padding: 28px;
+  background: #ffffff;
+  transform: translateX(100%);
+  visibility: hidden;
+  transition: transform 0.2s ease, visibility 0.2s ease;
+}
+
+.mobile-menu--open {
+  transform: translateX(0);
+  visibility: visible;
+}
+
+.mobile-menu__close {
+  align-self: flex-end;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #011c44;
+  font-size: 36px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.mobile-menu__nav {
+  margin-top: 56px;
+}
+
+.mobile-menu__nav ul {
+  display: grid;
+  gap: 24px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.mobile-menu__nav a {
+  color: #011c44;
+  font-size: 22px;
+  line-height: 1.2;
+}
+
+.mobile-menu__nav a:hover {
+  color: #2b7fff;
+}
+
+.page--scroll-locked {
+  overflow: hidden;
+}

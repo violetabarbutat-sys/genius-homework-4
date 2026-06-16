@@ -1,0 +1,73 @@
+﻿/* Layout styles */
+
+.page-container,
+.header__container,
+.about__container,
+.services__container {
+  position: relative;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero {
+  position: relative;
+  min-height: 560px;
+  padding: 56px 0 80px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.95) 15%, rgba(255, 255, 255, 0.35) 45%, rgba(255, 255, 255, 0) 70%),
+    url("../images/hero_bg.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: right top;
+  background-size: cover, cover;
+}
+
+.hero .page-container {
+  width: 100%;
+  padding: 0 20px;
+}
+
+.about__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.contact__content {
+  width: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  padding: 0 20px;
+}
+
+.mobile-menu {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  padding: 28px;
+  background: #ffffff;
+  transform: translateX(100%);
+  visibility: hidden;
+  transition: transform 0.2s ease, visibility 0.2s ease;
+}
+
+.mobile-menu--open {
+  transform: translateX(0);
+  visibility: visible;
+}

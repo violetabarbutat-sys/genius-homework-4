@@ -1,0 +1,71 @@
+﻿.why {
+  position: relative;
+  overflow: visible;
+  padding: 48px 0 64px;
+  z-index: 1;
+}
+
+.why__wave {
+  position: absolute;
+  width: 100vw;
+  height: auto;
+  left: 50%;
+  top: -140px;
+  transform: translateX(-50%);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.why__wave-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.why__title {
+  position: relative;
+  margin-bottom: 48px;
+  color: #011c44;
+  font-family: "Play", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.1;
+  text-align: center;
+}
+
+.why__title span {
+  color: #2b7fff;
+}
+
+.why__list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.why__card {
+  position: relative;
+  z-index: 3;
+  width: min(316px, calc(100vw - 40px));
+  min-height: 181px;
+  padding: 24px 32px;
+  border-radius: 32px;
+  background: #ffffff;
+  box-shadow: 0 4px 20px rgba(168, 198, 245, 0.3);
+  text-align: center;
+}
+
+.why__card img {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 16px;
+}
+
+.why__card p {
+  width: 252px;
+  margin: 0 auto;
+  color: #000000;
+  font-size: 18px;
+  line-height: 24px;
+}

@@ -1,0 +1,26 @@
+﻿.button--primary {
+  width: 219px;
+  height: 53px;
+  margin-bottom: 14px;
+  border: none;
+  border-radius: 32px;
+  background-color: #2b7fff;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.button--primary:hover {
+  background-color: #1a5edb;
+  transform: translateY(-2px);
+}
+
+.button--primary:active {
+  transform: translateY(0);
+}

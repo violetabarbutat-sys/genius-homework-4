@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Політика конфіденційності | Beauty Zone</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <div class="page-container header__container">
+      <div class="header__logo">
+        <a href="index.html#hero">
+          <img
+            src="images/logo.png"
+            srcset="images/logo.png 1x, images/logo@2x.png 2x"
+            alt="Beauty Zone"
+          >
+        </a>
+      </div>
+      <nav class="header__nav">
+        <ul class="header__menu">
+          <li><a href="index.html#about">Про нас</a></li>
+          <li><a href="index.html#why">Чому ми</a></li>
+          <li><a href="index.html#services">Наші процедури</a></li>
+          <li><a href="index.html#contact">Контакти</a></li>
+          <li><a href="privacy-policy.html">Політика конфіденційності</a></li>
+        </ul>
+      </nav>
+      <div class="header__socials">
+        <a href="tel:+380960000007"><img src="images/telephone.png" srcset="images/telephone.png 1x, images/telephone@2x.png 2x" alt=""></a>
+        <a href="#" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><img src="images/facebook.png" srcset="images/facebook.png 1x, images/facebook@2x.png 2x" alt=""></a>
+        <a href="#" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><img src="images/instagram.png" srcset="images/instagram.png 1x, images/instagram@2x.png 2x" alt=""></a>
+      </div>
+      <button
+        class="header__burger"
+        type="button"
+        data-mobile-menu-open
+        aria-label="Відкрити меню"
+        aria-controls="mobile-menu"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" data-mobile-menu aria-hidden="true">
+    <button class="mobile-menu__close" type="button" data-mobile-menu-close aria-label="Закрити меню">
+      &times;
+    </button>
+    <nav class="mobile-menu__nav" aria-label="Мобільна навігація">
+      <ul>
+        <li><a href="index.html#about">Про нас</a></li>
+        <li><a href="index.html#why">Чому ми</a></li>
+        <li><a href="index.html#services">Наші процедури</a></li>
+        <li><a href="index.html#contact">Контакти</a></li>
+        <li><a href="privacy-policy.html">Політика конфіденційності</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <main>
+    <section class="privacy-policy">
+      <div class="page-container">
+        <h1 class="privacy-policy__title">Політика конфіденційності</h1>
+        <div class="privacy-policy__content">
+          <p>
+            Beauty Zone поважає вашу конфіденційність і дбає про захист персональних даних,
+            які ви надаєте під час запису на консультацію або звернення до клініки.
+          </p>
+
+          <h2>Які дані ми збираємо</h2>
+          <p>
+            Ми можемо отримувати ваше ім'я, номер телефону, адресу електронної пошти та іншу
+            інформацію, яку ви добровільно залишаєте у формах на сайті.
+          </p>
+
+          <h2>Як ми використовуємо дані</h2>
+          <p>
+            Надані дані використовуються для зв'язку з вами, підтвердження запису,
+            консультації щодо послуг та покращення якості обслуговування.
+          </p>
+
+          <h2>Передача даних третім особам</h2>
+          <p>
+            Ми не передаємо ваші персональні дані третім особам, окрім випадків, передбачених
+            законодавством України або необхідних для виконання вашого запиту.
+          </p>
+
+          <h2>Захист інформації</h2>
+          <p>
+            Ми застосовуємо організаційні та технічні заходи для захисту персональних даних
+            від несанкціонованого доступу, втрати або зміни.
+          </p>
+
+          <h2>Ваші права</h2>
+          <p>
+            Ви можете звернутися до нас, щоб уточнити, оновити або видалити свої персональні
+            дані, якщо це не суперечить чинному законодавству.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="page-container footer__container">
+      <a class="footer__logo" href="index.html#hero" aria-label="Beauty Zone">
+        <img
+          src="images/logo.png"
+          srcset="images/logo.png 1x, images/logo@2x.png 2x"
+          alt="Beauty Zone"
+        >
+      </a>
+
+      <nav class="footer__nav" aria-label="Footer navigation">
+        <a href="index.html#about">Про нас</a>
+        <a href="index.html#why">Чому ми</a>
+        <a href="index.html#services">Наші процедури</a>
+        <a href="index.html#contact">Контакти</a>
+      </nav>
+
+      <address class="footer__contacts">
+        <a href="tel:+380960000007">+ 38 (096) 000 00 07</a>
+        <a href="mailto:beautyzone@gmail.com">beautyzone@gmail.com</a>
+        <span>Україна, м. Київ,<br>вул. Тараса Шевченка 5</span>
+        <span class="footer__icons">
+          <a href="tel:+380960000007" aria-label="Phone"><img src="images/telephone.png" srcset="images/telephone.png 1x, images/telephone@2x.png 2x" alt=""></a>
+          <a href="#" aria-label="Facebook"><img src="images/facebook.png" srcset="images/facebook.png 1x, images/facebook@2x.png 2x" alt=""></a>
+          <a href="#" aria-label="Instagram"><img src="images/instagram.png" srcset="images/instagram.png 1x, images/instagram@2x.png 2x" alt=""></a>
+        </span>
+      </address>
+
+      <div class="footer__policy">
+        <a href="privacy-policy.html">Політика конфіденційності</a>
+        <p>&copy; 2022 Дані захищені</p>
+      </div>
+    </div>
+    <img class="footer__photo" src="images/foto.png" srcset="images/foto.png 1x, images/foto@2x.png 2x" alt="">
+  </footer>
+
+  <script src="./js/mobile-menu.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+﻿.footer {
+  position: relative;
+  min-height: 278px;
+  overflow: hidden;
+  padding: 48px 0;
+  background:
+    linear-gradient(rgba(1, 31, 74, 0.96), rgba(1, 31, 74, 0.96)),
+    image-set(
+      url("../images/background.png") 1x,
+      url("../images/background@2x.png") 2x
+    )
+    center / 423px 481px repeat;
+  color: #ffffff;
+}
+
+.footer__container {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 28px;
+  align-items: start;
+}
+
+.footer__logo img {
+  width: 74px;
+  height: auto;
+  filter: none;
+}
+
+.footer__nav,
+.footer__contacts,
+.footer__policy {
+  display: grid;
+  gap: 16px;
+}
+
+.footer a,
+.footer__contacts span {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.footer__contacts {
+  font-style: normal;
+}
+
+.footer__icons {
+  display: flex;
+  gap: 32px;
+  margin-top: 2px;
+}
+
+.footer__icons img {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+
+.footer__policy {
+  justify-self: start;
+}
+
+.footer__policy p {
+  margin: 4px 0 0;
+  color: #747272;
+  font-size: 13px;
+}
+
+.footer__photo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 247px;
+  opacity: 0.35;
+  pointer-events: none;
+  z-index: 0;
+}

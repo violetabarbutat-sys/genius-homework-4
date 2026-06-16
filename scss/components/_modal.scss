@@ -1,0 +1,68 @@
+﻿.backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: rgba(1, 28, 68, 0.45);
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.2s, visibility 0.2s;
+}
+
+.backdrop--hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 423px;
+  height: 481px;
+  padding: 40px 56px;
+  border: 0;
+  border-radius: 32px;
+  background:
+    linear-gradient(rgba(1, 31, 74, 0.96), rgba(1, 31, 74, 0.96)),
+    image-set(
+      url("../images/background.png") 1x,
+      url("../images/background@2x.png") 2x
+    )
+    center / cover no-repeat;
+}
+
+.modal .callback-form {
+  width: 100%;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+
+.modal .form,
+.modal .form__input,
+.modal .button,
+.modal .callback-form__title {
+  width: 100%;
+}
+
+.modal__close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 24px;
+  height: 24px;
+  border: none;
+  padding: 0;
+  background: transparent;
+  color: #ffffff;
+  font-size: 28px;
+  line-height: 1;
+  cursor: pointer;
+}

@@ -1,0 +1,130 @@
+﻿.about {
+  padding: 48px 0 72px;
+  margin-top: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+}
+
+.about__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.about__content {
+  max-width: 620px;
+}
+
+.about__title {
+  max-width: 530px;
+  margin-top: 0;
+  margin-bottom: 40px;
+  color: #011c44;
+  font-family: "Play", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.about__title span {
+  color: #2b7fff;
+}
+
+.about__text {
+  max-width: 709px;
+  margin-bottom: 32px;
+  color: #011c44;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.about__text:last-child {
+  margin-bottom: 0;
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+.about__images {
+  position: relative;
+  width: 100%;
+  min-height: 560px;
+  margin-top: 0;
+}
+
+.about__photo {
+  position: absolute;
+  width: min(327px, 82vw);
+  height: min(327px, 82vw);
+  border-radius: 50%;
+  overflow: hidden;
+  background: #d9d9d9;
+}
+
+.about__photo--top {
+  top: 0;
+  left: 0;
+}
+
+.about__photo--bottom {
+  top: 260px;
+  right: 0;
+}
+
+.about__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.about__star {
+  position: absolute;
+  display: none;
+  animation: star-twinkle 3s ease-in-out infinite;
+}
+
+.about__star--large {
+  width: 64px;
+  height: 64px;
+  right: 390px;
+  bottom: 16px;
+  --star-rotate: 30deg;
+}
+
+.about__star--medium {
+  width: 40px;
+  height: 40px;
+  top: 24px;
+  right: 52px;
+  --star-rotate: -30deg;
+  animation-duration: 3.6s;
+  animation-delay: 0.35s;
+}
+
+.about__star--small {
+  width: 16px;
+  height: 16px;
+  top: 272px;
+  right: 12px;
+  --star-rotate: 22.91deg;
+  animation-duration: 2.8s;
+  animation-delay: 0.7s;
+}
+
+@keyframes star-twinkle {
+  0%, 100% {
+    transform: rotate(var(--star-rotate)) scale(1);
+  }
+
+  50% {
+    transform: rotate(calc(var(--star-rotate) + 24deg)) scale(1.14);
+  }
+}

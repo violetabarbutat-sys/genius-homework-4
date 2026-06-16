@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "sass": "npx sass --watch scss/main.scss css/style.css --no-source-map",
+    "sass:build": "npx sass scss/main.scss css/style.css --no-source-map"
+  },
+  "devDependencies": {
+    "sass": "^1.101.0"
+  }
+}
