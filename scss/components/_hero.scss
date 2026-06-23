@@ -1,61 +1,95 @@
 ﻿.hero {
   position: relative;
-  min-height: 560px;
-  padding: 56px 0 80px;
-  display: flex;
-  align-items: center;
+  min-height: 311px;
+  padding: 0;
+  display: block;
   overflow: hidden;
   background-image:
-    linear-gradient(to right, rgba(255, 255, 255, 0.95) 15%, rgba(255, 255, 255, 0.35) 45%, rgba(255, 255, 255, 0) 70%),
+    linear-gradient(56.68deg, #ffffff 20.92%, rgba(255, 255, 255, 0.78) 44.46%, rgba(255, 255, 255, 0.2) 58.9%, rgba(255, 255, 255, 0) 72.45%),
     image-set(
       url("../images/hero_bg.png") 1x,
       url("../images/hero_bg@2x.png") 2x
     );
   background-repeat: no-repeat, no-repeat;
-  background-position: right top;
-  background-size: cover, cover;
+  background-position: -49.02px 0.28px, -252px -492px;
+  background-size: 490.942px 323.865px, 915px 838px;
 }
 
 .hero .page-container {
   width: 100%;
-  padding: 0 20px;
+  padding: 0;
 }
 
 .hero__content {
-  position: relative;
+  position: absolute;
+  top: 71px;
+  left: 20.85px;
   z-index: 2;
-  max-width: 360px;
+  width: 319px;
+  height: 184px;
+  max-width: 319px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-top: -20px;
+  gap: 0;
+  margin-top: 0;
   overflow: visible;
 }
 
 .hero__content h1 {
-  max-width: 530px;
-  margin: 0 0 40px;
+  width: 330px;
+  height: 46px;
+  max-width: 330px;
+  margin: 0;
   font-family: "Play", sans-serif;
   font-weight: 700;
-  font-size: 64px;
-  line-height: 0.81;
+  font-size: 54px;
+  line-height: 46px;
   letter-spacing: 0;
+  text-align: center;
+  text-transform: capitalize;
   color: #4184f7;
 }
 
 .hero__content > p:first-child {
-  margin: 0 0 16px;
-  font-size: 18px;
-  line-height: 1;
+  width: 133px;
+  height: 18px;
+  margin: 0;
+  font-size: 12px;
+  line-height: 18px;
   color: #011c44;
 }
 
+.hero__content .button {
+  display: flex;
+  align-self: center;
+  width: 186px;
+  height: 44px;
+  margin: 32px 0 0;
+  padding: 16px 24px;
+  border-radius: 24px;
+  gap: 10px;
+  background: #2b7fff;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0;
+}
+
 .hero__content p:last-child {
-  width: 230px;
+  display: block;
+  align-self: center;
+  width: 186px;
+  height: 36px;
   margin: 8px 0 0;
-  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 11px;
   line-height: 18px;
   color: #4a4a4a;
+  letter-spacing: 0;
   text-align: center;
 }
 

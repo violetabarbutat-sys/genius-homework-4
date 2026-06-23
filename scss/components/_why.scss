@@ -1,14 +1,15 @@
 ﻿.why {
   position: relative;
   overflow: visible;
-  padding: 48px 0 64px;
+  margin-top: 32px;
+  padding: 0 0 64px;
   z-index: 1;
 }
 
 .why__wave {
   position: absolute;
   width: 100vw;
-  height: auto;
+  height: 1509px;
   left: 50%;
   top: -140px;
   transform: translateX(-50%);
@@ -18,18 +19,21 @@
 
 .why__wave-image {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
   display: block;
 }
 
 .why__title {
   position: relative;
-  margin-bottom: 48px;
+  width: 210px;
+  height: 76px;
+  margin: 0 auto 24px;
   color: #011c44;
-  font-family: "Play", sans-serif;
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 1.1;
+  font-family: "Roboto", sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1;
   text-align: center;
 }
 
@@ -38,28 +42,51 @@
 }
 
 .why__list {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
+  width: 316px;
+  height: 571px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: 177px 181px 181px;
+  gap: 16px;
 }
 
 .why__card {
   position: relative;
   z-index: 3;
-  width: min(316px, calc(100vw - 40px));
-  min-height: 181px;
+  width: 316px;
+  height: 181px;
   padding: 24px 32px;
   border-radius: 32px;
   background: #ffffff;
-  box-shadow: 0 4px 20px rgba(168, 198, 245, 0.3);
+  box-shadow: 0 4px 4px rgba(168, 198, 245, 0.38);
   text-align: center;
+}
+
+.why__card:first-child {
+  height: 177px;
+  padding: 20px 34px;
+}
+
+.why__card:first-child img {
+  width: 44px;
+  height: 44px;
+  margin-bottom: 12px;
+}
+
+.why__card:first-child p {
+  width: 248px;
 }
 
 .why__card img {
   width: 48px;
   height: 48px;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
+}
+
+.why__card:first-child img {
+  width: 44px;
+  height: 44px;
+  margin-bottom: 12px;
 }
 
 .why__card p {

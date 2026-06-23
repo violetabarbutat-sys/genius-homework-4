@@ -1,15 +1,21 @@
-﻿.contact {
-  padding: 64px 0;
+.contact {
+  min-height: 752px;
+  padding: 0 0 64px;
 }
 
 .contact__title {
-  margin: 0 auto 40px;
+  width: 210px;
+  height: 38px;
+  margin: 0 auto 24px;
   color: #011c44;
-  font-family: "Play", sans-serif;
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 1.1;
+  font-family: "Roboto", sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .contact__title span {
@@ -17,19 +23,21 @@
 }
 
 .contact__content {
-  width: auto;
+  width: 320px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 32px;
-  padding: 0 20px;
+  gap: 24px;
+  padding: 0;
 }
 
 .contact__map {
-  width: 100%;
-  max-width: 605px;
+  order: 1;
+  width: 100vw;
+  margin-right: calc(50% - 50vw);
+  margin-left: calc(50% - 50vw);
   height: 360px;
   flex: none;
   display: block;
@@ -56,6 +64,15 @@
   align-items: center;
 }
 
+.contact .callback-form {
+  width: 320px;
+  height: 434px;
+  max-width: none;
+  padding: 42px 24px;
+  background: #011c44;
+  border: 2px solid #011f4a;
+}
+
 .callback-form__title {
   width: 100%;
   margin: 0 0 20px;
@@ -64,6 +81,15 @@
   font-weight: 700;
   line-height: 1.2;
   text-align: center;
+}
+
+.contact .callback-form__title {
+  width: 272px;
+  height: 52px;
+  margin: 0 0 24px;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1;
 }
 
 .callback-form__title span {
@@ -78,6 +104,12 @@
   gap: 12px;
 }
 
+.contact .form {
+  width: 241px;
+  height: 274px;
+  gap: 16px;
+}
+
 .form__input {
   width: 100%;
   height: 52px;
@@ -87,6 +119,16 @@
   outline: none;
   background: transparent;
   color: #ffffff;
+}
+
+.contact .form__input {
+  width: 241px;
+  height: 46px;
+  padding-left: 24px;
+  border: 1.5px solid #747272;
+  border-radius: 24px;
+  font-size: 13px;
+  line-height: 1;
 }
 
 .form__input::placeholder {
@@ -110,6 +152,13 @@
   cursor: pointer;
 }
 
+.contact .button {
+  width: 241px;
+  height: 44px;
+  padding: 16px 24px;
+  border-radius: 24px;
+}
+
 .form__terms {
   width: 213px;
   margin: 0;
@@ -117,6 +166,10 @@
   font-size: 12px;
   line-height: 18px;
   text-align: center;
+}
+
+.contact .form__terms {
+  height: 36px;
 }
 
 .form__terms-link {
