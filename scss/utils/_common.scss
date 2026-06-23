@@ -39,17 +39,16 @@
   position: fixed;
   inset: 0;
   z-index: 1000;
-  display: flex;
+  display: none;
   flex-direction: column;
   padding: 28px;
   background: #ffffff;
-  transform: translateX(100%);
   visibility: hidden;
   transition: transform 0.2s ease, visibility 0.2s ease;
 }
 
 .mobile-menu--open {
-  transform: translateX(0);
+  display: flex;
   visibility: visible;
 }
 

@@ -396,6 +396,7 @@ ol {
 }
 .about {
   position: relative;
+  overflow: hidden;
   margin-top: 0;
   padding: 0 0 72px;
 }
@@ -593,13 +594,23 @@ ol {
 }
 
 .swiper-wrapper {
+  width: 100%;
   display: flex;
   align-items: center;
+  overflow: hidden;
 }
 
 .swiper-slide {
   display: flex;
   justify-content: center;
+}
+
+.services__slider:not(.swiper-initialized) .swiper-slide {
+  display: none;
+}
+
+.services__slider:not(.swiper-initialized) .swiper-slide:first-child {
+  display: flex;
 }
 
 .services__cards {
@@ -1323,17 +1334,16 @@ ol {
   position: fixed;
   inset: 0;
   z-index: 1000;
-  display: flex;
+  display: none;
   flex-direction: column;
   padding: 28px;
   background: #ffffff;
-  transform: translateX(100%);
   visibility: hidden;
   transition: transform 0.2s ease, visibility 0.2s ease;
 }
 
 .mobile-menu--open {
-  transform: translateX(0);
+  display: flex;
   visibility: visible;
 }
 
@@ -1397,14 +1407,16 @@ ol {
 
 .services {
   margin-top: -24px;
+  overflow: hidden;
+  contain: layout paint;
 }
 
 .services__container {
-  width: 1024px;
+  width: 320px;
   height: 502px;
-  max-width: none;
-  margin-left: 20px;
-  margin-right: 0;
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0;
 }
 
@@ -1420,16 +1432,16 @@ ol {
 }
 
 .services__slider {
-  width: 1024px;
-  max-width: 1024px;
+  width: 320px;
+  max-width: 320px;
   height: 440px;
   margin: 0;
-  overflow: visible;
+  overflow: hidden;
 }
 
 .services__cards {
-  width: 1024px;
-  max-width: 1024px;
+  width: 320px;
+  max-width: 320px;
   height: 416px;
   margin: 0;
   padding: 0;
@@ -1437,8 +1449,8 @@ ol {
 
 .services__pagination {
   top: 494px;
-  left: 128px;
-  transform: none;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 @media (min-width: 480px) {
@@ -1446,7 +1458,7 @@ ol {
     padding: 0;
   }
   .services__slider {
-    width: 1024px;
+    width: 320px;
   }
 }
 @media (min-width: 768px) {
@@ -1457,11 +1469,11 @@ ol {
     max-width: 960px;
   }
   .services__container {
-    width: 1024px;
+    width: 672px;
     height: 502px;
-    max-width: none;
-    margin-left: 20px;
-    margin-right: 0;
+    max-width: calc(100vw - 40px);
+    margin-left: auto;
+    margin-right: auto;
     padding: 0;
   }
   .services {
@@ -1654,19 +1666,19 @@ ol {
     line-height: 1;
   }
   .services__slider {
-    width: 1024px;
-    max-width: 1024px;
+    width: 672px;
+    max-width: calc(100vw - 40px);
     height: 440px;
-    overflow: visible;
+    overflow: hidden;
   }
   .services__pagination {
     top: 494px;
-    left: 128px;
-    transform: none;
+    left: 50%;
+    transform: translateX(-50%);
   }
   .services__cards {
-    width: 1024px;
-    max-width: 1024px;
+    width: 672px;
+    max-width: calc(100vw - 40px);
     height: 416px;
     padding: 0;
   }
@@ -1824,6 +1836,8 @@ ol {
   }
   .services__slider,
   .services__cards {
+    width: 1024px;
+    max-width: 1024px;
     margin-left: auto;
     margin-right: auto;
   }
