@@ -10,7 +10,7 @@
 }
 
 .header__container {
-  width: 324px;
+  width: min(324px, calc(100vw - 40px));
   height: 30px;
   display: flex;
   justify-content: space-between;

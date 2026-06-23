@@ -25,7 +25,7 @@
   top: 71px;
   left: 20.85px;
   z-index: 2;
-  width: 319px;
+  width: calc(100vw - 40px);
   height: 184px;
   max-width: 319px;
   display: flex;
@@ -37,14 +37,14 @@
 }
 
 .hero__content h1 {
-  width: 330px;
-  height: 46px;
-  max-width: 330px;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
   margin: 0;
   font-family: "Play", sans-serif;
   font-weight: 700;
-  font-size: 54px;
-  line-height: 46px;
+  font-size: clamp(44px, 14vw, 54px);
+  line-height: 1;
   letter-spacing: 0;
   text-align: center;
   text-transform: capitalize;

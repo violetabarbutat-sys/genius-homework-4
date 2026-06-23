@@ -1,6 +1,6 @@
 /* Block 4 mobile geometry follows the horizontal Figma slider track. */
 .header__container {
-  width: 324px;
+  width: min(324px, calc(100vw - 40px));
   height: 30px;
   margin-left: 20px;
   margin-right: 0;
@@ -375,12 +375,19 @@
 
   .contact__map {
     order: 0;
+    position: static;
+    left: auto;
+    transform: none;
     max-width: 605px;
     margin-right: 0;
     margin-left: 0;
     flex: 1 1 0;
     min-width: 0;
     height: 481px;
+  }
+
+  .contact__map-link {
+    display: none;
   }
 
   .callback-form {
@@ -670,6 +677,7 @@
   }
 
   .footer__photo {
+    width: 247px;
     opacity: 1;
   }
 }
