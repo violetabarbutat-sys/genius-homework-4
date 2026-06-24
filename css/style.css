@@ -786,7 +786,7 @@ ol {
   background: #ffffff;
   font-size: 24px;
   color: #011c44;
-  display: none;
+  display: flex;
   align-items: center;
   justify-content: center;
   box-shadow: 0 6px 20px rgba(1, 28, 68, 0.26);
@@ -807,7 +807,7 @@ ol {
 }
 
 .services__button.swiper-button-lock {
-  display: none;
+  display: flex;
 }
 
 .services__button--prev {
@@ -1632,6 +1632,9 @@ ol {
     padding-top: 24px;
     padding-bottom: 96px;
   }
+  .why__wave {
+    top: -140px;
+  }
   .why__title {
     width: auto;
     height: auto;
@@ -1817,6 +1820,29 @@ ol {
   }
   .privacy-policy__content h2 {
     font-size: 28px;
+  }
+}
+@media (min-width: 1024px) {
+  .services__container {
+    width: min(1024px, 100vw - 32px);
+    height: 538px;
+    max-width: 1024px;
+  }
+  .services__slider,
+  .services__cards {
+    width: min(992px, 100vw - 32px);
+    max-width: 992px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .services__pagination {
+    top: 530px;
+  }
+  .services__button--prev {
+    left: 0;
+  }
+  .services__button--next {
+    right: 0;
   }
 }
 @media (min-width: 1200px) {

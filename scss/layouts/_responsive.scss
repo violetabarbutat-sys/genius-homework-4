@@ -251,6 +251,10 @@
     padding-bottom: 96px;
   }
 
+  .why__wave {
+    top: -140px;
+  }
+
   .why__title {
     width: auto;
     height: auto;
@@ -472,6 +476,34 @@
     font-size: 28px;
   }
 
+}
+
+@media (min-width: 1024px) {
+  .services__container {
+    width: min(1024px, calc(100vw - 32px));
+    height: 538px;
+    max-width: 1024px;
+  }
+
+  .services__slider,
+  .services__cards {
+    width: min(992px, calc(100vw - 32px));
+    max-width: 992px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .services__pagination {
+    top: 530px;
+  }
+
+  .services__button--prev {
+    left: 0;
+  }
+
+  .services__button--next {
+    right: 0;
+  }
 }
 
 @media (min-width: 1200px) {

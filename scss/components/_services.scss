@@ -250,7 +250,7 @@
   background: #ffffff;
   font-size: 24px;
   color: #011c44;
-  display: none;
+  display: flex;
   align-items: center;
   justify-content: center;
   box-shadow: 0 6px 20px rgba(1, 28, 68, 0.26);
@@ -271,7 +271,7 @@
 }
 
 .services__button.swiper-button-lock {
-  display: none;
+  display: flex;
 }
 
 .services__button--prev {
