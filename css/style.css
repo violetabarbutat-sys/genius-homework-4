@@ -162,8 +162,8 @@ select {
   overflow: hidden;
   background-image: linear-gradient(56.68deg, #ffffff 20.92%, rgba(255, 255, 255, 0.78) 44.46%, rgba(255, 255, 255, 0.2) 58.9%, rgba(255, 255, 255, 0) 72.45%), image-set(url("../images/hero_bg.png") 1x, url("../images/hero_bg@2x.png") 2x);
   background-repeat: no-repeat, no-repeat;
-  background-position: -49.02px 0.28px, -300px -70px;
-  background-size: 490.942px 323.865px, 680px 623px;
+  background-position: -49.02px 0.28px, -272px -50px;
+  background-size: 490.942px 323.865px, 620px 568px;
 }
 
 .hero .page-container {
