@@ -249,7 +249,7 @@ select {
   position: absolute;
   left: -10%;
   right: 0;
-  bottom: -18px;
+  bottom: -54px;
   width: 120%;
   height: 96px;
   background: image-set(url("../images/blob.png") 1x, url("../images/blob@2x.png") 2x) no-repeat center bottom;
