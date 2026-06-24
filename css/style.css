@@ -156,14 +156,14 @@ select {
 
 .hero {
   position: relative;
-  min-height: 311px;
+  min-height: 638px;
   padding: 0;
   display: block;
   overflow: hidden;
   background-image: linear-gradient(56.68deg, #ffffff 20.92%, rgba(255, 255, 255, 0.78) 44.46%, rgba(255, 255, 255, 0.2) 58.9%, rgba(255, 255, 255, 0) 72.45%), image-set(url("../images/hero_bg.png") 1x, url("../images/hero_bg@2x.png") 2x);
   background-repeat: no-repeat, no-repeat;
-  background-position: -49.02px 0.28px, -272px -50px;
-  background-size: 490.942px 323.865px, 620px 568px;
+  background-position: center top, center top;
+  background-size: 915px 638px, 915px 638px;
 }
 
 .hero .page-container {
@@ -173,8 +173,8 @@ select {
 
 .hero__content {
   position: absolute;
-  top: 71px;
-  left: 20.85px;
+  top: 145px;
+  left: 20px;
   z-index: 2;
   width: calc(100vw - 40px);
   height: 184px;
@@ -194,7 +194,7 @@ select {
   margin: 0;
   font-family: "Play", sans-serif;
   font-weight: 700;
-  font-size: clamp(44px, 14vw, 54px);
+  font-size: 54px;
   line-height: 1;
   letter-spacing: 0;
   text-align: center;
@@ -203,9 +203,10 @@ select {
 }
 
 .hero__content > p:first-child {
-  width: 133px;
+  align-self: center;
+  width: auto;
   height: 18px;
-  margin: 0;
+  margin: 0 0 8px;
   font-size: 12px;
   line-height: 18px;
   color: #011c44;
@@ -260,6 +261,11 @@ select {
   z-index: 1;
 }
 
+@media (max-width: 340px) {
+  .hero__content h1 {
+    font-size: 48px;
+  }
+}
 .about {
   padding: 48px 0 72px;
   margin-top: 0;
