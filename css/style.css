@@ -156,14 +156,14 @@ select {
 
 .hero {
   position: relative;
-  min-height: 638px;
+  min-height: 311px;
   padding: 0;
   display: block;
   overflow: hidden;
   background-image: linear-gradient(56.68deg, #ffffff 20.92%, rgba(255, 255, 255, 0.78) 44.46%, rgba(255, 255, 255, 0.2) 58.9%, rgba(255, 255, 255, 0) 72.45%), image-set(url("../images/hero_bg.png") 1x, url("../images/hero_bg@2x.png") 2x);
   background-repeat: no-repeat, no-repeat;
-  background-position: center top, center top;
-  background-size: 915px 638px, 915px 638px;
+  background-position: -49.02px 0.28px, center top;
+  background-size: 490.942px 323.865px, 520px auto;
 }
 
 .hero .page-container {
@@ -173,10 +173,10 @@ select {
 
 .hero__content {
   position: absolute;
-  top: 145px;
-  left: 20px;
+  top: 71px;
+  left: 20.85px;
   z-index: 2;
-  width: calc(100vw - 40px);
+  width: 319px;
   height: 184px;
   max-width: 319px;
   display: flex;
@@ -188,14 +188,14 @@ select {
 }
 
 .hero__content h1 {
-  width: 100%;
-  height: auto;
-  max-width: 100%;
+  width: 330px;
+  height: 46px;
+  max-width: 330px;
   margin: 0;
   font-family: "Play", sans-serif;
   font-weight: 700;
   font-size: 54px;
-  line-height: 1;
+  line-height: 46px;
   letter-spacing: 0;
   text-align: center;
   text-transform: capitalize;
@@ -203,10 +203,9 @@ select {
 }
 
 .hero__content > p:first-child {
-  align-self: center;
-  width: auto;
+  width: 133px;
   height: 18px;
-  margin: 0 0 8px;
+  margin: 0;
   font-size: 12px;
   line-height: 18px;
   color: #011c44;
@@ -250,7 +249,7 @@ select {
   position: absolute;
   left: -10%;
   right: 0;
-  bottom: -54px;
+  bottom: -18px;
   width: 120%;
   height: 96px;
   background: image-set(url("../images/blob.png") 1x, url("../images/blob@2x.png") 2x) no-repeat center bottom;
@@ -261,11 +260,6 @@ select {
   z-index: 1;
 }
 
-@media (max-width: 340px) {
-  .hero__content h1 {
-    font-size: 48px;
-  }
-}
 .about {
   padding: 48px 0 72px;
   margin-top: 0;
@@ -479,7 +473,7 @@ ol {
   width: 100vw;
   height: 1509px;
   left: 50%;
-  top: -140px;
+  top: -185px;
   transform: translateX(-50%);
   z-index: 0;
   pointer-events: none;
