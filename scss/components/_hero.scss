@@ -62,10 +62,10 @@
 
 .hero__content .button {
   display: flex;
-  align-self: center;
+  align-self: flex-start;
   width: 186px;
   height: 44px;
-  margin: 32px 26px 0 0;
+  margin: 32px 0 0;
   padding: 16px 24px;
   border-radius: 24px;
   gap: 10px;
@@ -80,10 +80,10 @@
 
 .hero__content p:last-child {
   display: block;
-  align-self: center;
+  align-self: flex-start;
   width: 186px;
   height: 36px;
-  margin: 8px 26px 0 0;
+  margin: 8px 0 0;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 11px;

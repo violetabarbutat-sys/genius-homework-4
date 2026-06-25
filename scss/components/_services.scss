@@ -52,6 +52,22 @@
   display: flex;
 }
 
+@media (max-width: 767px) {
+  .services__slider .swiper-wrapper {
+    transform: none !important;
+  }
+
+  .services__slider .swiper-slide {
+    display: none;
+    width: 100% !important;
+    margin-right: 0 !important;
+  }
+
+  .services__slider .services__slide--current {
+    display: flex;
+  }
+}
+
 .services__cards {
   position: relative;
   width: 100%;

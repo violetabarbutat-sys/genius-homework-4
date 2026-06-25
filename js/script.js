@@ -138,6 +138,19 @@
         blinkCurrentCard();
       };
 
+      const showMobileCardByDirection = (direction) => {
+        currentCardIndex =
+          (currentCardIndex + direction + cards.length) % cards.length;
+
+        resetCardsFlip();
+        updateProcedures();
+        blinkCurrentCard();
+
+        if (swiper) {
+          swiper.slideTo(currentCardIndex, 0);
+        }
+      };
+
       const updateDesktopCardsOrder = () => {
         serviceSlides.forEach((slide, index) => {
           slide.style.order = String((index - desktopCardOffset + serviceSlides.length) % serviceSlides.length);
@@ -198,7 +211,7 @@
             return;
           }
 
-          swiper.slidePrev();
+          showMobileCardByDirection(-1);
         });
 
         nextButton.addEventListener("click", () => {
@@ -207,21 +220,15 @@
             return;
           }
 
-          swiper.slideNext();
+          showMobileCardByDirection(1);
         });
       } else {
         prevButton.addEventListener("click", () => {
-          currentCardIndex = Math.max(currentCardIndex - 1, 0);
-          resetCardsFlip();
-          updateProcedures();
-          blinkCurrentCard();
+          showMobileCardByDirection(-1);
         });
 
         nextButton.addEventListener("click", () => {
-          currentCardIndex = Math.min(currentCardIndex + 1, cards.length - 1);
-          resetCardsFlip();
-          updateProcedures();
-          blinkCurrentCard();
+          showMobileCardByDirection(1);
         });
       }
 
