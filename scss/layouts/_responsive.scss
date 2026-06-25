@@ -101,6 +101,10 @@
     background-size: cover, cover;
   }
 
+  .hero::before {
+    bottom: -18px;
+  }
+
   .hero .page-container {
     padding: 0 20px 0 106px;
   }
@@ -253,6 +257,10 @@
 
   .why__wave {
     top: -140px;
+  }
+
+  .why__wave::after {
+    display: none;
   }
 
   .why__title {
@@ -503,6 +511,18 @@
 
   .services__button--next {
     right: 0;
+  }
+
+  .contact__content {
+    width: min(992px, calc(100vw - 32px));
+    max-width: 992px;
+  }
+
+  .contact__map {
+    width: 545px;
+    max-width: 545px;
+    flex: 0 1 545px;
+    background: #d8e8ff;
   }
 }
 

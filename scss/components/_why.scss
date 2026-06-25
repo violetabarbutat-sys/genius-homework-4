@@ -15,9 +15,28 @@
   transform: translateX(-50%);
   z-index: 0;
   pointer-events: none;
+  overflow: hidden;
+}
+
+.why__wave::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  background: linear-gradient(
+    180deg,
+    rgba(43, 127, 255, 0) 0%,
+    rgba(43, 127, 255, 0.28) 18%,
+    rgba(168, 198, 245, 0.44) 42%,
+    rgba(43, 127, 255, 0.18) 70%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  mix-blend-mode: multiply;
 }
 
 .why__wave-image {
+  position: relative;
+  z-index: 1;
   width: 100%;
   height: 100%;
   object-fit: cover;

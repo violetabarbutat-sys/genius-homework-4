@@ -188,14 +188,14 @@ select {
 }
 
 .hero__content h1 {
-  width: 330px;
-  height: 46px;
-  max-width: 330px;
+  width: 300px;
+  height: 42px;
+  max-width: 300px;
   margin: 0;
   font-family: "Play", sans-serif;
   font-weight: 700;
-  font-size: 54px;
-  line-height: 46px;
+  font-size: 48px;
+  line-height: 42px;
   letter-spacing: 0;
   text-align: center;
   text-transform: capitalize;
@@ -249,7 +249,7 @@ select {
   position: absolute;
   left: -10%;
   right: 0;
-  bottom: -18px;
+  bottom: -42px;
   width: 120%;
   height: 96px;
   background: image-set(url("../images/blob.png") 1x, url("../images/blob@2x.png") 2x) no-repeat center bottom;
@@ -477,9 +477,21 @@ ol {
   transform: translateX(-50%);
   z-index: 0;
   pointer-events: none;
+  overflow: hidden;
+}
+
+.why__wave::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  background: linear-gradient(180deg, rgba(43, 127, 255, 0) 0%, rgba(43, 127, 255, 0.28) 18%, rgba(168, 198, 245, 0.44) 42%, rgba(43, 127, 255, 0.18) 70%, rgba(255, 255, 255, 0) 100%);
+  mix-blend-mode: multiply;
 }
 
 .why__wave-image {
+  position: relative;
+  z-index: 1;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -1504,6 +1516,9 @@ ol {
     background-position: center top;
     background-size: cover, cover;
   }
+  .hero::before {
+    bottom: -18px;
+  }
   .hero .page-container {
     padding: 0 20px 0 106px;
   }
@@ -1634,6 +1649,9 @@ ol {
   }
   .why__wave {
     top: -140px;
+  }
+  .why__wave::after {
+    display: none;
   }
   .why__title {
     width: auto;
@@ -1843,6 +1861,16 @@ ol {
   }
   .services__button--next {
     right: 0;
+  }
+  .contact__content {
+    width: min(992px, 100vw - 32px);
+    max-width: 992px;
+  }
+  .contact__map {
+    width: 545px;
+    max-width: 545px;
+    flex: 0 1 545px;
+    background: #d8e8ff;
   }
 }
 @media (min-width: 1200px) {
