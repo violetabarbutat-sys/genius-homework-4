@@ -676,6 +676,10 @@
     display: none;
   }
 
+  .footer::after {
+    display: none;
+  }
+
   .footer__container {
     width: auto;
     min-height: 0;
