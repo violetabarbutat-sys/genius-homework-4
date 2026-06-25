@@ -680,6 +680,11 @@
     display: none;
   }
 
+  .footer__nav::before,
+  .footer__nav::after {
+    display: none;
+  }
+
   .footer__container {
     width: auto;
     min-height: 0;
