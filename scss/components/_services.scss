@@ -48,7 +48,7 @@
   display: none;
 }
 
-.services__slider:not(.swiper-initialized) .swiper-slide:first-child {
+.services__slider:not(.swiper-initialized) .services__slide--current {
   display: flex;
 }
 

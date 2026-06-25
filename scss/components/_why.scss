@@ -3,6 +3,13 @@
   overflow: visible;
   margin-top: 32px;
   padding: 0 0 64px;
+  background: linear-gradient(
+    180deg,
+    #ffffff 0,
+    #ffffff 180px,
+    #f4f7ff 180px,
+    #f4f7ff 100%
+  );
   z-index: 1;
 }
 
@@ -11,7 +18,7 @@
   width: 100vw;
   height: 1509px;
   left: 50%;
-  top: -250px;
+  top: -235px;
   transform: translateX(-50%);
   z-index: 0;
   pointer-events: none;

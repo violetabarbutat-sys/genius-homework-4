@@ -97,6 +97,10 @@
             );
           });
         });
+
+        serviceSlides.forEach((slide, index) => {
+          slide.classList.toggle("services__slide--current", index === currentCardIndex);
+        });
       };
 
       const resetCardsFlip = () => {
