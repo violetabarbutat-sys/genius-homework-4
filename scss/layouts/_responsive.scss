@@ -15,42 +15,74 @@
 
 .services__container {
   width: 320px;
-  height: 502px;
-  max-width: 320px;
+  height: 468px;
+  max-width: calc(100vw - 40px);
   margin-left: auto;
   margin-right: auto;
   padding: 0;
 }
 
 .services__title {
-  width: 247px;
-  height: 38px;
-  margin-left: 37px;
-  margin-bottom: 24px;
+  width: 100%;
+  height: auto;
+  margin-left: 0;
+  margin-bottom: 20px;
   font-family: "Roboto", sans-serif;
   font-size: 32.16px;
   font-weight: 500;
-  line-height: 1;
+  line-height: 1.15;
 }
 
 .services__slider {
-  width: 320px;
-  max-width: 320px;
-  height: 440px;
-  margin: 0;
+  width: 280px;
+  max-width: calc(100vw - 40px);
+  height: 388px;
+  margin: 0 auto;
   overflow: hidden;
 }
 
 .services__cards {
-  width: 320px;
-  max-width: 320px;
-  height: 416px;
+  width: 280px;
+  max-width: calc(100vw - 40px);
+  height: 364px;
   margin: 0;
   padding: 0;
 }
 
+.services-card {
+  width: 280px;
+  height: 364px;
+}
+
+.services-card__front,
+.services-card__back {
+  padding: 0 56px 22px;
+}
+
+.services-card--face .services-card__front,
+.services-card--face .services-card__back {
+  background-size: 420px 571px;
+  background-position: -100px -155px;
+}
+
+.services-card--body .services-card__front,
+.services-card--body .services-card__back {
+  background-size: 615px 410px;
+  background-position: -170px -23px;
+}
+
+.services-card--hair .services-card__front,
+.services-card--hair .services-card__back {
+  background-size: 371px 557px;
+  background-position: -42px -2px;
+}
+
+.services__button {
+  top: 56%;
+}
+
 .services__pagination {
-  top: 494px;
+  top: 456px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -253,6 +285,7 @@
     margin-top: 0;
     padding-top: 24px;
     padding-bottom: 96px;
+    background: #f4f7ff;
   }
 
   .why__wave {
