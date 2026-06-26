@@ -465,7 +465,7 @@ ol {
   overflow: visible;
   margin-top: 32px;
   padding: 0 0 64px;
-  background: linear-gradient(180deg, #2b7fff 0, #2b7fff 180px, #f4f7ff 260px, #f4f7ff 100%);
+  background: #f4f7ff;
   z-index: 1;
 }
 
@@ -474,7 +474,7 @@ ol {
   width: 100vw;
   height: 1509px;
   left: 50%;
-  top: -235px;
+  top: -140px;
   transform: translateX(-50%);
   z-index: 0;
   pointer-events: none;
