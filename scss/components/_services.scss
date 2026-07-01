@@ -290,7 +290,7 @@
   display: flex;
 }
 
-@media (max-width: 1279px) {
+@media (min-width: 768px) and (max-width: 1279px) {
   .services__button,
   .services__button.swiper-button-lock {
     display: none;
