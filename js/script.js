@@ -45,7 +45,7 @@
       let selectedProcedureIndex = 0;
       let desktopCardOffset = 0;
       const serviceSlides = document.querySelectorAll(".services__slider .swiper-slide");
-      const desktopMediaQuery = window.matchMedia("(min-width: 1024px)");
+      const desktopMediaQuery = window.matchMedia("(min-width: 1280px)");
 
       [prevButton, nextButton].forEach((button) => {
         button.disabled = false;
@@ -67,11 +67,7 @@
                 slidesPerView: 2,
                 spaceBetween: 32,
               },
-              1024: {
-                slidesPerView: 3,
-                spaceBetween: 16,
-              },
-              1200: {
+              1280: {
                 slidesPerView: 3,
                 spaceBetween: 32,
               },

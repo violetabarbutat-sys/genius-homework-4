@@ -69,6 +69,11 @@ ol {
   background: #d9d9d9;
 }
 
+.about__photo--top,
+.about__photo--bottom {
+  display: none;
+}
+
 .about__photo--top {
   top: 0;
   left: 0;

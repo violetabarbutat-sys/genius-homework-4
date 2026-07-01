@@ -290,6 +290,13 @@
   display: flex;
 }
 
+@media (max-width: 1279px) {
+  .services__button,
+  .services__button.swiper-button-lock {
+    display: none;
+  }
+}
+
 .services__button--prev {
   left: 4px;
 }
