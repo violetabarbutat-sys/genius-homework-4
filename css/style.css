@@ -1243,7 +1243,7 @@ ol {
 .footer__contacts,
 .footer__policy {
   display: grid;
-  gap: 14px;
+  gap: 16px;
   justify-items: center;
   text-align: center;
 }
