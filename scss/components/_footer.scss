@@ -3,12 +3,12 @@
   min-height: auto;
   overflow: hidden;
   padding: 32px 0 48px;
-  background-color: #011c44;
+  background-color: #011f4a;
   background-image: url("../images/footer-background.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  border: 2px solid #011f4a;
+  border: 2px solid #011c44;
   color: #ffffff;
   text-align: center;
 }
@@ -20,7 +20,7 @@
   left: -194px;
   width: 129px;
   height: 181px;
-  border: 2px solid #011f4a;
+  border: 2px solid #011c44;
   opacity: 1;
   pointer-events: none;
   transform: rotate(90deg);
@@ -35,7 +35,7 @@
   left: 399px;
   width: 137px;
   height: 130px;
-  border: 2px solid #011f4a;
+  border: 2px solid #011c44;
   opacity: 1;
   pointer-events: none;
   transform: rotate(90deg);
@@ -83,7 +83,7 @@
 .footer__nav::after {
   content: "";
   position: absolute;
-  border: 2px solid #011f4a;
+  border: 2px solid #011c44;
   opacity: 1;
   pointer-events: none;
   transform: rotate(90deg);
