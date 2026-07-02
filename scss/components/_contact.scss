@@ -37,8 +37,9 @@
   order: 1;
   width: 100vw;
   max-width: 100vw;
-  margin-right: calc(50% - 50vw);
-  margin-left: calc(50% - 50vw);
+  margin-right: 0;
+  margin-left: 0;
+  align-self: center;
   position: static;
   height: 360px;
   flex: none;
