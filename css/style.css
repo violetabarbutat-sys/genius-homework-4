@@ -1585,11 +1585,11 @@ ol {
 }
 
 .services__button--prev {
-  left: 8px;
+  left: 2px;
 }
 
 .services__button--next {
-  right: 8px;
+  right: 2px;
 }
 
 .services__pagination {
