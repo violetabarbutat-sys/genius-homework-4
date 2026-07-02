@@ -112,6 +112,10 @@
   .services__slider {
     width: 320px;
   }
+
+  .services__button--prev {
+    left: -46px;
+  }
 }
 
 @media (min-width: 1280px) {
