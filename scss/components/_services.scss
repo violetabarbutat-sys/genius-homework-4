@@ -52,7 +52,7 @@
   display: flex;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1279px) {
   .services__slider .swiper-wrapper {
     transform: none !important;
   }
@@ -288,13 +288,6 @@
 
 .services__button.swiper-button-lock {
   display: flex;
-}
-
-@media (min-width: 768px) and (max-width: 1279px) {
-  .services__button,
-  .services__button.swiper-button-lock {
-    display: none;
-  }
 }
 
 .services__button--prev {
