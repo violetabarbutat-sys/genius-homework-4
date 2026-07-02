@@ -20,6 +20,13 @@
   padding: 0;
 }
 
+@media (max-width: 1279px) {
+  .hero {
+    background-position: left top, center top;
+    background-size: 100% 100%, 100% auto;
+  }
+}
+
 .hero__content {
   position: absolute;
   top: 71px;
