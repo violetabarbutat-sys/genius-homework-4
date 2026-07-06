@@ -16,7 +16,7 @@
 
 @media (max-width: 1279px) {
   .hero {
-    background-position: -49.02px 0.28px, 58% top;
+    background-position: center top, center top;
     background-size: 490.942px 323.865px, 520px auto;
   }
 }
@@ -91,7 +91,7 @@
 
 .services__button,
 .services__button.swiper-button-lock {
-  display: flex;
+  display: none;
   width: 36px;
   height: 36px;
   font-size: 20px;
@@ -126,6 +126,24 @@
 
   .services__button--next {
     right: -46px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  .services__container {
+    width: 672px;
+    height: 502px;
+    max-width: calc(100vw - 40px);
+  }
+
+  .services__slider,
+  .services__cards {
+    width: 672px;
+    max-width: calc(100vw - 40px);
+  }
+
+  .contact__map {
+    order: 0;
   }
 }
 
@@ -332,6 +350,7 @@
 
   .why__wave {
     top: -140px;
+    height: 1509px;
   }
 
   .why__wave::after {
@@ -817,13 +836,21 @@
     line-height: 1.2;
   }
 
-  .footer__policy {
-    justify-self: auto;
-  }
-
   .footer__photo {
     width: 247px;
     opacity: 1;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer__container {
+    justify-items: left;
+  }
+
+  .footer__nav,
+  .footer__contacts,
+  .footer__policy {
+    justify-items: left;
   }
 }
 

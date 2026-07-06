@@ -162,7 +162,7 @@ select {
   overflow: hidden;
   background-image: linear-gradient(56.68deg, #ffffff 20.92%, rgba(255, 255, 255, 0.78) 44.46%, rgba(255, 255, 255, 0.2) 58.9%, rgba(255, 255, 255, 0) 72.45%), image-set(url("../images/hero_bg.png") 1x, url("../images/hero_bg@2x.png") 2x);
   background-repeat: no-repeat, no-repeat;
-  background-position: -49.02px 0.28px, 58% top;
+  background-position: center top, center top;
   background-size: 490.942px 323.865px, 520px auto;
 }
 
@@ -356,6 +356,7 @@ ol {
 .about__star {
   position: absolute;
   display: none;
+  z-index: 2;
   opacity: 1;
   animation: star-twinkle 3s ease-in-out infinite;
 }
@@ -504,6 +505,7 @@ ol {
 
 .why__title {
   position: relative;
+  z-index: 3;
   width: 210px;
   height: 76px;
   margin: 0 auto 24px;
@@ -630,19 +632,6 @@ ol {
   display: flex;
 }
 
-@media (max-width: 1279px) {
-  .services__slider .swiper-wrapper {
-    transform: none !important;
-  }
-  .services__slider .swiper-slide {
-    display: none;
-    width: 100% !important;
-    margin-right: 0 !important;
-  }
-  .services__slider .services__slide--current {
-    display: flex;
-  }
-}
 .services__cards {
   position: relative;
   width: 100%;
@@ -1509,7 +1498,7 @@ ol {
 
 @media (max-width: 1279px) {
   .hero {
-    background-position: -49.02px 0.28px, 58% top;
+    background-position: center top, center top;
     background-size: 490.942px 323.865px, 520px auto;
   }
 }
@@ -1583,7 +1572,7 @@ ol {
 
 .services__button,
 .services__button.swiper-button-lock {
-  display: flex;
+  display: none;
   width: 36px;
   height: 36px;
   font-size: 20px;
@@ -1615,6 +1604,21 @@ ol {
   }
   .services__button--next {
     right: -46px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .services__container {
+    width: 672px;
+    height: 502px;
+    max-width: calc(100vw - 40px);
+  }
+  .services__slider,
+  .services__cards {
+    width: 672px;
+    max-width: calc(100vw - 40px);
+  }
+  .contact__map {
+    order: 0;
   }
 }
 @media (min-width: 1280px) {
@@ -1786,6 +1790,7 @@ ol {
   }
   .why__wave {
     top: -140px;
+    height: 1509px;
   }
   .why__wave::after {
     display: none;
@@ -2185,12 +2190,19 @@ ol {
     font-size: 13px;
     line-height: 1.2;
   }
-  .footer__policy {
-    justify-self: auto;
-  }
   .footer__photo {
     width: 247px;
     opacity: 1;
+  }
+}
+@media (min-width: 1200px) {
+  .footer__container {
+    justify-items: left;
+  }
+  .footer__nav,
+  .footer__contacts,
+  .footer__policy {
+    justify-items: left;
   }
 }
 @media screen and (min-width: 1280px) {
