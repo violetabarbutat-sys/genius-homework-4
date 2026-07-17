@@ -163,7 +163,7 @@ select {
   background-image: linear-gradient(56.68deg, #ffffff 20.92%, rgba(255, 255, 255, 0.78) 44.46%, rgba(255, 255, 255, 0.2) 58.9%, rgba(255, 255, 255, 0) 72.45%), image-set(url("../images/hero_bg.png") 1x, url("../images/hero_bg@2x.png") 2x);
   background-repeat: no-repeat, no-repeat;
   background-position: center top, center top;
-  background-size: 490.942px 323.865px, 520px auto;
+  background-size: max(100vw, 560px) auto, max(100vw, 560px) auto;
 }
 
 .hero .page-container {
@@ -1497,8 +1497,9 @@ ol {
 
 @media (max-width: 1279px) {
   .hero {
+    min-height: clamp(311px, 67vw, 430px);
     background-position: center top, center top;
-    background-size: 490.942px 323.865px, 520px auto;
+    background-size: max(100vw, 560px) auto, max(100vw, 560px) auto;
   }
 }
 .services__container {
@@ -1592,6 +1593,12 @@ ol {
 }
 
 @media (min-width: 480px) and (max-width: 1279px) {
+  .header__container {
+    width: calc(100vw - 40px);
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .services__cards {
     padding: 0;
   }
@@ -1606,6 +1613,44 @@ ol {
   }
 }
 @media (min-width: 768px) and (max-width: 1279px) {
+  .hero {
+    min-height: clamp(430px, 52vw, 560px);
+  }
+  .hero__content {
+    top: clamp(88px, 12vw, 126px);
+    left: max(40px, 50vw - 440px);
+    width: 380px;
+    height: auto;
+    max-width: 380px;
+  }
+  .hero__content h1 {
+    width: 380px;
+    height: auto;
+    max-width: 380px;
+    font-size: 64px;
+    line-height: 0.95;
+    text-align: left;
+  }
+  .hero__content > p:first-child {
+    width: auto;
+    height: auto;
+    margin-bottom: 8px;
+    font-size: 16px;
+    line-height: 1.2;
+  }
+  .hero__content .button {
+    width: 190px;
+    height: 48px;
+    margin-top: 28px;
+    border-radius: 28px;
+    font-size: 16px;
+  }
+  .hero__content p:last-child {
+    width: 190px;
+    height: auto;
+    font-size: 12px;
+    line-height: 18px;
+  }
   .services__container {
     width: 672px;
     height: 502px;
