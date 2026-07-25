@@ -68,24 +68,6 @@
   padding: 0 56px 22px;
 }
 
-.services-card--face .services-card__front,
-.services-card--face .services-card__back {
-  background-size: 420px 571px;
-  background-position: -100px -155px;
-}
-
-.services-card--body .services-card__front,
-.services-card--body .services-card__back {
-  background-size: 615px 410px;
-  background-position: -170px -23px;
-}
-
-.services-card--hair .services-card__front,
-.services-card--hair .services-card__back {
-  background-size: 371px 557px;
-  background-position: -42px -2px;
-}
-
 .services__button {
   top: 56%;
 }
@@ -144,10 +126,12 @@
 
   .hero__content {
     top: clamp(88px, 12vw, 126px);
-    left: max(40px, 50vw - 440px);
+    left: 50%;
     width: 380px;
     height: auto;
     max-width: 380px;
+    align-items: center;
+    transform: translateX(-50%);
   }
 
   .hero__content h1 {
@@ -156,7 +140,7 @@
     max-width: 380px;
     font-size: 64px;
     line-height: 0.95;
-    text-align: left;
+    text-align: center;
   }
 
   .hero__content > p:first-child {
@@ -165,9 +149,11 @@
     margin-bottom: 8px;
     font-size: 16px;
     line-height: 1.2;
+    text-align: center;
   }
 
   .hero__content .button {
+    align-self: center;
     width: 190px;
     height: 48px;
     margin-top: 28px;
@@ -176,6 +162,7 @@
   }
 
   .hero__content p:last-child {
+    align-self: center;
     width: 190px;
     height: auto;
     font-size: 12px;
@@ -195,7 +182,7 @@
   }
 
   .contact__map {
-    order: 0;
+    order: 1;
   }
 }
 
@@ -252,6 +239,8 @@
     max-width: 530px;
     margin-top: -20px;
     gap: 0;
+    align-items: flex-start;
+    transform: none;
   }
 
   .hero__content h1 {
@@ -853,7 +842,13 @@
   .footer__contacts,
   .footer__policy {
     order: initial;
+    display: grid;
     justify-items: left;
+  }
+
+  .footer__contacts > a,
+  .footer__contacts > span:not(.footer__icons) {
+    display: inline;
   }
 
   .footer__icons {
@@ -874,6 +869,7 @@
   }
 
   .footer__policy a {
+    order: initial;
     width: auto;
     height: auto;
     font-size: 16px;
@@ -881,6 +877,7 @@
   }
 
   .footer__policy p {
+    order: initial;
     width: auto;
     height: auto;
     margin: 4px 0 0;
@@ -889,6 +886,7 @@
   }
 
   .footer__photo {
+    display: block;
     width: 247px;
     opacity: 1;
   }

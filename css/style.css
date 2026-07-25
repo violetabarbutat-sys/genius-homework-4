@@ -174,17 +174,18 @@ select {
 .hero__content {
   position: absolute;
   top: 71px;
-  left: 20.85px;
+  left: 50%;
   z-index: 2;
-  width: 319px;
+  width: min(319px, 100vw - 40px);
   height: 184px;
   max-width: 319px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   gap: 0;
   margin-top: 0;
   overflow: visible;
+  transform: translateX(-50%);
 }
 
 .hero__content h1 {
@@ -209,11 +210,12 @@ select {
   font-size: 12px;
   line-height: 18px;
   color: #011c44;
+  text-align: center;
 }
 
 .hero__content .button {
   display: flex;
-  align-self: flex-start;
+  align-self: center;
   width: 140px;
   height: 34px;
   margin: 28px 0 0;
@@ -231,7 +233,7 @@ select {
 
 .hero__content p:last-child {
   display: block;
-  align-self: flex-start;
+  align-self: center;
   width: 140px;
   height: 30px;
   margin: 6px 0 0;
@@ -365,8 +367,8 @@ ol {
   display: block;
   width: 40px;
   height: 40px;
-  top: 56px;
-  left: calc(100% - 77px);
+  top: 142px;
+  right: 24px;
   --star-rotate: 30deg;
   animation: none;
   transform: rotate(var(--star-rotate));
@@ -714,22 +716,16 @@ ol {
 .services-card--face .services-card__front,
 .services-card--face .services-card__back {
   background-image: image-set(url("../images/image 1580 (1).png") 1x, url("../images/image 1580 (1)@2x.png") 2x);
-  background-size: 480px 653px;
-  background-position: -114px -177px;
 }
 
 .services-card--body .services-card__front,
 .services-card--body .services-card__back {
   background-image: image-set(url("../images/image 1570.png") 1x, url("../images/image 1570@2x.png") 2x);
-  background-size: 703px 468px;
-  background-position: -194px -26px;
 }
 
 .services-card--hair .services-card__front,
 .services-card--hair .services-card__back {
   background-image: image-set(url("../images/image 1574.png") 1x, url("../images/image 1574@2x.png") 2x);
-  background-size: 424px 636px;
-  background-position: -48px -2px;
 }
 
 .services-card__back::before {
@@ -1157,43 +1153,17 @@ ol {
   overflow: hidden;
   padding: 32px 0 48px;
   background-color: #011f4a;
-  background-image: url("../images/footer-background.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   border: 2px solid #011c44;
   color: #ffffff;
   text-align: center;
 }
 
 .footer::before {
-  content: "";
-  position: absolute;
-  top: 238px;
-  left: -194px;
-  width: 129px;
-  height: 181px;
-  border: 2px solid #011c44;
-  opacity: 1;
-  pointer-events: none;
-  transform: rotate(90deg);
-  transform-origin: top left;
-  z-index: 0;
+  display: none;
 }
 
 .footer::after {
-  content: "";
-  position: absolute;
-  top: 105px;
-  left: 399px;
-  width: 137px;
-  height: 130px;
-  border: 2px solid #011c44;
-  opacity: 1;
-  pointer-events: none;
-  transform: rotate(90deg);
-  transform-origin: top left;
-  z-index: 0;
+  display: none;
 }
 
 .footer__container {
@@ -1234,14 +1204,7 @@ ol {
 
 .footer__nav::before,
 .footer__nav::after {
-  content: "";
-  position: absolute;
-  border: 2px solid #011c44;
-  opacity: 1;
-  pointer-events: none;
-  transform: rotate(90deg);
-  transform-origin: top left;
-  z-index: 0;
+  display: none;
 }
 
 .footer__nav::before {
@@ -1318,6 +1281,11 @@ ol {
   text-align: center;
 }
 
+.footer__contacts > a,
+.footer__contacts > span:not(.footer__icons) {
+  display: none;
+}
+
 .footer__icons {
   display: flex;
   width: 136px;
@@ -1339,9 +1307,11 @@ ol {
   order: 3;
   width: 100%;
   gap: 10px;
+  display: contents;
 }
 
 .footer__policy a {
+  order: 3;
   width: max-content;
   max-width: 100%;
   height: auto;
@@ -1356,6 +1326,7 @@ ol {
 }
 
 .footer__policy p {
+  order: 5;
   width: 100%;
   height: 18px;
   margin: 0;
@@ -1368,13 +1339,7 @@ ol {
 }
 
 .footer__photo {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  width: 180px;
-  opacity: 0.22;
-  pointer-events: none;
-  z-index: 0;
+  display: none;
 }
 
 /* Utility and common styles */
@@ -1548,24 +1513,6 @@ ol {
   padding: 0 56px 22px;
 }
 
-.services-card--face .services-card__front,
-.services-card--face .services-card__back {
-  background-size: 420px 571px;
-  background-position: -100px -155px;
-}
-
-.services-card--body .services-card__front,
-.services-card--body .services-card__back {
-  background-size: 615px 410px;
-  background-position: -170px -23px;
-}
-
-.services-card--hair .services-card__front,
-.services-card--hair .services-card__back {
-  background-size: 371px 557px;
-  background-position: -42px -2px;
-}
-
 .services__button {
   top: 56%;
 }
@@ -1618,10 +1565,12 @@ ol {
   }
   .hero__content {
     top: clamp(88px, 12vw, 126px);
-    left: max(40px, 50vw - 440px);
+    left: 50%;
     width: 380px;
     height: auto;
     max-width: 380px;
+    align-items: center;
+    transform: translateX(-50%);
   }
   .hero__content h1 {
     width: 380px;
@@ -1629,7 +1578,7 @@ ol {
     max-width: 380px;
     font-size: 64px;
     line-height: 0.95;
-    text-align: left;
+    text-align: center;
   }
   .hero__content > p:first-child {
     width: auto;
@@ -1637,8 +1586,10 @@ ol {
     margin-bottom: 8px;
     font-size: 16px;
     line-height: 1.2;
+    text-align: center;
   }
   .hero__content .button {
+    align-self: center;
     width: 190px;
     height: 48px;
     margin-top: 28px;
@@ -1646,6 +1597,7 @@ ol {
     font-size: 16px;
   }
   .hero__content p:last-child {
+    align-self: center;
     width: 190px;
     height: auto;
     font-size: 12px;
@@ -1662,7 +1614,7 @@ ol {
     max-width: calc(100vw - 40px);
   }
   .contact__map {
-    order: 0;
+    order: 1;
   }
 }
 @media (min-width: 1280px) {
@@ -1707,6 +1659,8 @@ ol {
     max-width: 530px;
     margin-top: -20px;
     gap: 0;
+    align-items: flex-start;
+    transform: none;
   }
   .hero__content h1 {
     width: auto;
@@ -2205,7 +2159,12 @@ ol {
   .footer__contacts,
   .footer__policy {
     order: initial;
+    display: grid;
     justify-items: left;
+  }
+  .footer__contacts > a,
+  .footer__contacts > span:not(.footer__icons) {
+    display: inline;
   }
   .footer__icons {
     width: auto;
@@ -2222,12 +2181,14 @@ ol {
     gap: 16px;
   }
   .footer__policy a {
+    order: initial;
     width: auto;
     height: auto;
     font-size: 16px;
     line-height: 1.2;
   }
   .footer__policy p {
+    order: initial;
     width: auto;
     height: auto;
     margin: 4px 0 0;
@@ -2235,6 +2196,7 @@ ol {
     line-height: 1.2;
   }
   .footer__photo {
+    display: block;
     width: 247px;
     opacity: 1;
   }

@@ -23,17 +23,18 @@
 .hero__content {
   position: absolute;
   top: 71px;
-  left: 20.85px;
+  left: 50%;
   z-index: 2;
-  width: 319px;
+  width: min(319px, calc(100vw - 40px));
   height: 184px;
   max-width: 319px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   gap: 0;
   margin-top: 0;
   overflow: visible;
+  transform: translateX(-50%);
 }
 
 .hero__content h1 {
@@ -58,11 +59,12 @@
   font-size: 12px;
   line-height: 18px;
   color: #011c44;
+  text-align: center;
 }
 
 .hero__content .button {
   display: flex;
-  align-self: flex-start;
+  align-self: center;
   width: 140px;
   height: 34px;
   margin: 28px 0 0;
@@ -80,7 +82,7 @@
 
 .hero__content p:last-child {
   display: block;
-  align-self: flex-start;
+  align-self: center;
   width: 140px;
   height: 30px;
   margin: 6px 0 0;
