@@ -204,7 +204,7 @@ select {
 }
 
 .hero__content > p:first-child {
-  width: 133px;
+  width: 170px;
   height: 18px;
   margin: 0;
   font-size: 12px;
@@ -218,7 +218,7 @@ select {
   align-self: center;
   width: 140px;
   height: 34px;
-  margin: 28px 0 0;
+  margin: 10px 0 0;
   padding: 10px 16px;
   border-radius: 22px;
   gap: 10px;
@@ -367,11 +367,12 @@ ol {
   display: block;
   width: 40px;
   height: 40px;
-  top: 142px;
-  right: 24px;
+  top: 82px;
+  right: auto;
+  left: 50%;
   --star-rotate: 30deg;
   animation: none;
-  transform: rotate(var(--star-rotate));
+  transform: translateX(-50%) rotate(var(--star-rotate));
 }
 
 .about__star--medium {
@@ -440,7 +441,7 @@ ol {
   width: min(264px, 100%);
   height: 76px;
   max-width: 264px;
-  margin: 0 auto 24px;
+  margin: 0 auto 56px;
   font-family: "Roboto", sans-serif;
   font-size: 32px;
   font-weight: 500;
@@ -1592,7 +1593,7 @@ ol {
     align-self: center;
     width: 190px;
     height: 48px;
-    margin-top: 28px;
+    margin-top: 18px;
     border-radius: 28px;
     font-size: 16px;
   }
@@ -1779,6 +1780,7 @@ ol {
     right: 390px;
     bottom: 16px;
     animation: star-twinkle 3s ease-in-out infinite;
+    transform: rotate(var(--star-rotate));
   }
   .why {
     margin-top: 0;
